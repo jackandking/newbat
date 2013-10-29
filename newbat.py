@@ -16,8 +16,8 @@ __version__='0.1'
 _author_ = 'Yingjie.Liu@thomsonreuters.com'
 # Configuration Area End
 
-#_newbat_server_='newxx.sinaapp.com'
-_newbat_server_='localhost:8080'
+_newbat_server_='newxx.sinaapp.com'
+#_newbat_server_='localhost:8080'
 
 from datetime import datetime
 from optparse import OptionParser
@@ -26,12 +26,12 @@ import socket
 socket.setdefaulttimeout(3)
 
 header='''@echo off
-REM Author: %s
-REM DateTime: %s
-REM Generator: https://github.com/jackandking/newbat
-REM Newbat Version: %s
-REM Newbat ID: %s
-REM Description: I'm a lazy person, so you have to figure out the function of this script by yourself.
+REM # Author: %s
+REM # DateTime: %s
+REM # Generator: https://github.com/jackandking/newbat
+REM # Newbat Version: %s
+REM # Newbat ID: %s
+REM # Description: I'm a lazy person, so you have to figure out the function of this script by yourself.
 '''
 
 sample_blocks = dict([
@@ -41,6 +41,9 @@ sample_blocks = dict([
 r'''
 @python C:\Script\Python\newbat\newbat.py %*
 ''']),
+
+    ('A' , 
+['svnci: echo date time', 'http://newxx.sinaapp.com/newbat/6']),
 
 ])
 
