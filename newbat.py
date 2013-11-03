@@ -42,8 +42,19 @@ r'''
 @python C:\Script\Python\newbat\newbat.py %*
 ''']),
 
+    ('1' , 
+['macro',
+r'''
+doskey /macrofile=c:\bin\macros.cmd
+REM sample content of macros.cmd:
+REM vi="C:\Program Files\Vim\vim72\gvim.exe" $1
+''']),
+
     ('A' , 
 ['svnci: echo date time', 'http://newxx.sinaapp.com/newbat/6']),
+
+    ('B' , 
+['sh: cmd history', 'http://newxx.sinaapp.com/newbat/7']),
 
 ])
 
